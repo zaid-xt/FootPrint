@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags for character set and viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <!-- Linking external resources -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+
+<body>
+
+<!-- Header Section -->
+<div class="header">
+    <div class="container">
+        <!-- Navbar -->
+        <div class="navbar">
+            <div class="logo">
+                <a href="home.html"><img src="Images/Logo.png" width="140px"></a>
+            </div>
+            <nav>
+                <ul>
+                     <!-- Nav Links -->
+                    <li><a href="home.html"><b>Home</b></a></li>
+                    <li><a href="products.html"><b>Products</b></a></li>
+                    <li><a href="about.html"><b>About</b></a></li>
+                    <li><a href="contact.html"><b>Contact</b></a></li>
+                    <li><a href="account.html"><b>Account</b></a></li>
+                </ul>
+             </nav>
+            <!-- Cart and Wishlist Icons -->
+            <div class="image container">
+                <a href="cart.html"><img src="Images/Cart.svg" width="16px" height="16px"></a>
+                <img src="Images/WishList.svg" width="16px" height="16px">
+            </div>
+        </div>
+      
+<!-- Contact Form Section -->
+        <div class = "account-page">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2">
+                        <img src="Images/Account1.webp" width="100%">
+                    </div>
+                    <div class="col-2">
+                        <div class="form-container">
+                            <div class="form-btn">
+                                <span>Login</span>
+                                <span>Register</span>
+                                <hr id="Indicator">
+
+                            </div>
+                            <form id="LoginForm">
+                                <input type="text" placeholder="Username">
+                                <input type="password" placeholder="Password">
+                                <button type="submit" class="btn-2" id="loginButton">Login</button>
+                                <a href="">Forget Password</a>
+                              </form>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Alert Section -->
+        <script>
+            const loginButton = document.getElementById("loginButton");
+            loginButton.addEventListener("click", function() {
+              window.alert("Please fill in all required information.");
+            });
+          </script>
+
+ <!-- Footer Section -->
+ <footer>
+    <div class="bottom">
+        <p class="foot">&copy; 2023 footprint. All rights reserved.</p>
+        <p class="foot">Subscribe to our newsletter to receive updates and special offers.</p>
+        <p class="foot">Follow us on social media.</p>
+    </div>
+</footer>
+
+</body>
+
+</html>
